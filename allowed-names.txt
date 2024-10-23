@@ -1,0 +1,17 @@
+*app.safe.global
+*.base.llamarpc.com
+*.llamarpc.com
+*.mainnet.base.org
+*.safe.global
+*.safe.global
+*.blockaid.io
+base.llamarpc.com
+safe-client.safe.global
+client.blockaid.io*
+basescan.org
+*blockaid.io
+cdn.blockaid.io
+*infura.io*
+llamarpc.com
+safe-client.safe.global
+safe.global
