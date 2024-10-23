@@ -1,0 +1,36 @@
+## Block everything by default
+block_unqualified = true
+block_undelegated = true
+ignore_system_dns = true
+
+## List of servers to use
+server_names = ['cloudflare', 'google']
+
+listen_addresses = ['127.0.0.1:53']
+
+[sources]
+  [sources.public-resolvers]
+    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md']
+    cache_file = 'public-resolvers.md'
+    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+    refresh_delay = 72
+    prefix = ''
+
+[blocked_names]
+blocked_names_file = 'blocked-names.txt'
+
+[allowed_names]
+allowed_names_file = 'allowed-names.txt'
+
+## Optional path to a file logging allowed queries
+log_file = 'allowed-names.log'
+
+## Optional log format: tsv or ltsv (default: tsv)
+log_format = 'tsv'
+
+# Enable query logging in dnscrypt-proxy.toml
+[query_log]
+  file = 'query.log'
+  format = 'tsv'
+
+
