@@ -15,3 +15,6 @@ cdn.blockaid.io
 llamarpc.com
 safe-client.safe.global
 safe.global
+
+*.uniswap.org
+*.uniswap.org*
